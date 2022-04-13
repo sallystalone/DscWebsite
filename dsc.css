@@ -1,0 +1,245 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+body{
+background-color:rgb(0, 0, 0);
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: rgba(30, 2, 143, 0.63);
+  height: 10%;
+}
+
+
+.boxdiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  z-index: 1;
+  
+}
+
+.box1{
+ position: absolute;
+  width: 20%;
+  height: 300px;
+  top:850px;
+  right: 250px;
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.589), #f79c009d, #0576e675, #64f38d5b);
+  color: transparent;
+  background-size: 300%;
+  background-position: -200%;  
+  animation: animatedText 8s infinite alternate-reverse;
+  border-radius: 45px;
+  border: 4px inset green ;
+}
+.box2{
+  background-color: red;
+  width: 20%;
+ position: absolute;
+  height: 300px;
+  top: 1200px;
+  left: 350px;
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.589), #f79c009d, #0576e675, #64f38d5b);
+  background-size: 300%;
+  background-position: -200%;  
+  animation: animatedText 8s infinite alternate-reverse;
+  border-radius: 45px;
+  border: 4px solid rgb(36, 36, 221) ;
+
+}
+.box3{
+  position: absolute;
+  background-color: rgba(255, 0, 0, 0.418);
+  width: 20%;
+  height: 300px;
+  color: wheat;
+  height: 300px;
+  top: 1600px;
+  right: 230px;
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.589), #f79c009d, #0576e675, #64f38d5b);
+  background-size: 300%;
+  background-position: -200%;  
+  animation: animatedText 8s infinite alternate-reverse;
+  border-radius: 45px;
+  border: 4px groove yellow ;
+  
+}
+
+.divimg{
+position: relative;
+
+
+ }
+ 
+@keyframes animatedText{
+  to{
+    background-position: 100%; 
+  }
+}
+nav {
+  position: absolute;
+  top: -20px;
+	margin: 40px auto 0;
+	position: relative;
+	width: 1300px;
+	height: 50px;
+	background-color: #000000;
+	border-radius: 10px;
+	font-size: 0;
+}
+nav a {
+	line-height: 50px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+  margin: 10px;
+
+}
+nav .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .4s ;
+	border-radius: 8px;
+}
+a:nth-child(1) {
+	width: 100px;
+}
+a:nth-child(2) {
+	width: 110px;
+}
+a:nth-child(3) {
+	width: 100px;
+}
+a:nth-child(4) {
+	width: 140px;
+}
+
+
+nav .start-home, a:nth-child(1):hover~.animation {
+	width: 420px;
+	left: 0;
+	background-color:rgba(30, 2, 143, 0.63);
+}
+nav .start-about, a:nth-child(2):hover~.animation {
+	width: 300px;
+	left: 340px;
+	background-color: #e74c3c;
+}
+nav .start-blog, a:nth-child(3):hover~.animation {
+	width: 300px;
+	left: 620px;
+	background-color: #3498db;
+}
+nav .start-portefolio, a:nth-child(4):hover~.animation {
+	width: 400px;
+	left: 900px;
+	background-color: #0fc41e;
+}
+
+.pdiv{
+position: absolute;
+top: 58%;
+left: 380px;
+color: white;
+}
+.pdiv2{
+  position: absolute;
+  top: 64%;
+  right: 380px;
+  color: white;
+  }
+.footerdiv{
+   position: absolute;
+    width: 100%;
+    height: 400px;
+    color: wheat;
+  }
+  .footerdiv a{
+    text-decoration: none;
+    width: 15%;
+  font-size: 30px;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  border: 4px solid black;
+  text-align: center;
+  border-radius: 15px;
+  background-color:rgb(1, 46, 172) ;
+  color: white;
+  transition: all .2s;
+  height: 11%;
+  }
+  .footerdiv a:hover{
+background-color: rgba(40, 87, 241, 0.945);
+  }
+  .container{
+display: flex;
+align-items: center;
+flex-direction: column;
+
+
+
+
+  }
+  .link{
+    position: absolute;
+    right: 35px;
+    
+  }
+  .link img{
+    position: relative;
+   bottom: 200px;
+    
+  }
+  .linkt{
+    position: absolute;
+    right: 80px;
+  }
+  .linkt img{
+    position: relative;
+   bottom: 200px;
+  }
+  .linkb{
+    position: absolute;
+    right: 125px;
+  }
+  .linkb img{
+  position: relative;
+  bottom: 200px;
+  }
+  .links{
+    position: absolute;
+    right: 170px;
+  }
+  .links img{
+  position: relative;
+  bottom: 200px;
+  }
+   .takip{
+    position: absolute;
+    color: white;
+    right: 0px;
+    font-size: 12px;
+
+  }
+  .takip h2{
+    position: relative;
+    top: 170px;
+    
+  }
+  
