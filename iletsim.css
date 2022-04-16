@@ -16,61 +16,6 @@
 }
 
 
-.boxdiv{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  z-index: 1;
-  
-}
-
-.box1{
- position: absolute;
-  width: 20%;
-  height: 300px;
-  top:850px;
-  right: 250px;
-  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.589), #f79c009d, #0576e675, #64f38d5b);
-  color: transparent;
-  background-size: 300%;
-  background-position: -200%;  
-  animation: animatedText 8s infinite alternate-reverse;
-  border-radius: 45px;
-  border: 4px inset green ;
-}
-.box2{
-  background-color: red;
-  width: 20%;
- position: absolute;
-  height: 300px;
-  top: 1200px;
-  left: 350px;
-  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.589), #f79c009d, #0576e675, #64f38d5b);
-  background-size: 300%;
-  background-position: -200%;  
-  animation: animatedText 8s infinite alternate-reverse;
-  border-radius: 45px;
-  border: 4px solid rgb(36, 36, 221) ;
-
-}
-.box3{
-  position: absolute;
-  background-color: rgba(255, 0, 0, 0.418);
-  width: 20%;
-  height: 300px;
-  color: wheat;
-  height: 300px;
-  top: 1600px;
-  right: 230px;
-  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.589), #f79c009d, #0576e675, #64f38d5b);
-  background-size: 300%;
-  background-position: -200%;  
-  animation: animatedText 8s infinite alternate-reverse;
-  border-radius: 45px;
-  border: 4px groove yellow ;
-  
-}
-
 
 
 .divimg{
@@ -131,9 +76,9 @@ a:nth-child(4) {
 }
 
 
-nav .start-home, a:nth-child(1):hover~.animation {
-	width: 420px;
-	left: 0;
+nav .start-home, a:nth-child(3):hover~.animation {
+	width: 300px;
+	left: 620px;
 	background-color:rgba(30, 2, 143, 0.63);
 }
 nav .start-about, a:nth-child(2):hover~.animation {
@@ -141,9 +86,9 @@ nav .start-about, a:nth-child(2):hover~.animation {
 	left: 340px;
 	background-color: #e74c3c;
 }
-nav .start-blog, a:nth-child(3):hover~.animation {
-	width: 300px;
-	left: 620px;
+nav .start-blog, a:nth-child(1):hover~.animation {
+	width: 420px;
+	left: 0px;
 	background-color: #3498db;
 }
 nav .start-portefolio, a:nth-child(4):hover~.animation {

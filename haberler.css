@@ -131,9 +131,9 @@ a:nth-child(4) {
 }
 
 
-nav .start-home, a:nth-child(1):hover~.animation {
-	width: 420px;
-	left: 0;
+nav .start-home, a:nth-child(4):hover~.animation {
+	width: 400px;
+	left: 900px;
 	background-color:rgba(30, 2, 143, 0.63);
 }
 nav .start-about, a:nth-child(2):hover~.animation {
@@ -146,9 +146,9 @@ nav .start-blog, a:nth-child(3):hover~.animation {
 	left: 620px;
 	background-color: #3498db;
 }
-nav .start-portefolio, a:nth-child(4):hover~.animation {
+nav .start-portefolio, a:nth-child(1):hover~.animation {
 	width: 400px;
-	left: 900px;
+	left: 0px;
 	background-color: #0fc41e;
 }
 
