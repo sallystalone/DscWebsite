@@ -19,7 +19,6 @@ background-color:black;
  
 }
 
-
 .boxdiv{
   display: flex;
   flex-direction: row;
@@ -29,29 +28,18 @@ background-color:black;
 }
 
 .box1{
- position: absolute;
+  position: absolute;
   width: 20%;
   height: 300px;
-  top:600px;
+  top:850px;
   right: 250px;
-  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.589), #f79c009d, #0576e675, #64f38d5b);
+  background-image: linear-gradient(45deg, rgba(255, 62, 62, 0.541), #fff4587a);
   color: transparent;
   background-size: 300%;
   background-position: -200%;  
-  animation: animatedText 8s infinite alternate-reverse;
+  animation: animatedText 2s ease-in-out  alternate-reverse;
   border-radius: 45px;
-  border: 4px inset green ;
-}
-.box1 img
-{
-  height: 270px;
-  width : 270px;
-  margin-top: 30px;
- justify-content: center;
-  margin-right: 20px;
-  margin-left: 20px;
-  border-radius: 45px;
-
+  border: 4px solid rgba(255, 255, 0, 0.863) ;
 }
 
 .box2{
@@ -64,67 +52,15 @@ background-color:black;
   background-image: linear-gradient(to right, rgba(255, 0, 0, 0.589), #f79c009d, #0576e675, #64f38d5b);
   background-size: 300%;
   background-position: -200%;  
-  animation: animatedText 8s infinite alternate-reverse;
+  animation: animatedText 2s  alternate-reverse;
   border-radius: 45px;
   border: 4px solid rgb(36, 36, 221) ;
 
 }
-.box2 img
-{
-  height: 270px;
-  width : 270px;
-  margin-top: 30px;
- justify-content: center;
-  margin-right: 20px;
-  margin-left: 20px;
-  border-radius: 45px;
 
-}
-.box3{
-  position: absolute;
-  background-color: rgba(255, 0, 0, 0.418);
-  width: 20%;
-  height: 300px;
-  color: wheat;
-  height: 300px;
-  top: 950px;
-  right: 250px;
-  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.589), #f79c009d, #0576e675, #64f38d5b);
-  background-size: 300%;
-  background-position: -200%;  
-  animation: animatedText 8s infinite alternate-reverse;
-  border-radius: 45px;
-  border: 4px groove yellow ;
-  
-}
-.box3 img
-{
-  height: 270px;
-  width : 270px;
-  margin-top: 30px;
-  justify-content: center;
-  margin-right: 20px;
-  margin-left: 20px;
-  border-radius: 45px;
 
-}
-.box4{
-  position: absolute;
-  background-color: rgba(255, 0, 0, 0.418);
-  width: 20%;
-  height: 300px;
-  color: wheat;
-  height: 300px;
-  top: 950px;
-  left: 350px;
-  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.589), #f79c009d, #0576e675, #64f38d5b);
-  background-size: 300%;
-  background-position: -200%;  
-  animation: animatedText 8s infinite alternate-reverse;
-  border-radius: 45px;
-  border: 4px groove yellow ;
-  
-}
+
+
 .box5{
   position: absolute;
   background-color: rgba(255, 0, 0, 0.418);
@@ -137,7 +73,7 @@ background-color:black;
   background-image: linear-gradient(to right, rgba(255, 0, 0, 0.589), #f79c009d, #0576e675, #64f38d5b);
   background-size: 300%;
   background-position: -200%;  
-  animation: animatedText 8s infinite alternate-reverse;
+  animation: animatedText 2s  alternate-reverse;
   border-radius: 45px;
   border: 4px groove yellow ;
   
@@ -154,7 +90,7 @@ background-color:black;
   background-image: linear-gradient(to right, rgba(255, 0, 0, 0.589), #f79c009d, #0576e675, #64f38d5b);
   background-size: 300%;
   background-position: -200%;  
-  animation: animatedText 8s infinite alternate-reverse;
+  animation: animatedText 2s  alternate-reverse;
   border-radius: 45px;
   border: 4px groove yellow ;
   
@@ -167,10 +103,14 @@ position: relative;
 
  }
  
-@keyframes animatedText{
-  to{
-    background-position: 100%; 
+ @keyframes animatedText{
+  0% {
+    opacity: 1;
   }
+  100% {
+    opacity: 0;
+  } 
+  
 }
 nav {
   position: absolute;
@@ -267,3 +207,15 @@ flex-direction: column;
   footer
 {
   background-color: rgba(30, 2, 143, 0.63);}
+  .links{
+    text-decoration: none;
+    list-style: none;
+  }
+  .links li a{
+    color:white;
+    transition: all .2s;
+  }
+  .links li a:hover{
+  color: rgb(61, 61, 250);
+  
+  }
